@@ -59,5 +59,11 @@ namespace Another
             Console.WriteLine(phone);
         }
 
+        [Given(@"I shall rull (.*) into the calculator")]
+        public void GivenIShallRullIntoTheCalculator(int p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+
     }
 }
